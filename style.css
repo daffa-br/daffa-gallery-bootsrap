@@ -1,0 +1,253 @@
+:root {
+  --warna1: #f2f0e7;
+  --warna2: #cf6e38;
+  --warna3: #5e8494;
+}
+* {
+  color: black;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  background-color: white;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.navbar-brand span {
+  color: var(--warna2);
+}
+
+.container-fluid {
+  margin: 0 7%;
+  padding: 0;
+}
+
+.navbar-nav {
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 1rem;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: var(--warna2);
+}
+
+.welcome {
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+
+.welcome h1 {
+  padding: 0 25%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.welcome p {
+  padding: 1rem 20%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.carousel {
+  margin: 0 7%;
+}
+
+.opening {
+  text-align: center;
+  margin: 8%;
+}
+
+.opening h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.about {
+  background-color: var(--warna3);
+  display: flex;
+  padding: 5rem 7%;
+  gap: 4rem;
+}
+
+.about h1 {
+  font-weight: 600;
+}
+
+.about button {
+  border: solid 1px;
+  border-radius: 0px;
+  color: black;
+}
+
+.about button:hover {
+  color: white;
+  background-color: black;
+}
+
+.about img {
+  width: 60%;
+  height: fit-content;
+}
+
+.masterpiece {
+  background-color: var(--warna2);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 7%;
+}
+
+.masterpiece div {
+  display: flex;
+  gap: 35%;
+  padding-bottom: 2rem;
+}
+
+.masterpiece h1 {
+  font-weight: 600;
+}
+
+.masterpiece div div {
+  flex-direction: column;
+  align-items: start;
+}
+
+.masterpiece button {
+  border: solid 1px;
+  border-radius: 0px;
+  color: black;
+}
+
+.masterpiece button:hover {
+  color: white;
+  background-color: black;
+}
+
+.visit {
+  background-color: var(--warna3);
+  display: flex;
+  padding: 5rem 7%;
+  gap: 4rem;
+}
+
+.visit h1 {
+  font-weight: 600;
+}
+
+.visit button {
+  border: solid 1px;
+  border-radius: 0px;
+  color: black;
+}
+
+.visit button:hover {
+  color: white;
+  background-color: black;
+}
+
+.etc {
+  display: flex;
+  display: flex;
+  padding: 5rem 7%;
+  gap: 4rem;
+}
+
+.etc h1 {
+  font-weight: 600;
+}
+
+.etc button {
+  border: solid 1px;
+  border-radius: 0px;
+  color: black;
+}
+
+.etc button:hover {
+  color: white;
+  background-color: black;
+}
+
+.etc img {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem 0;
+}
+
+footer {
+  background-color: var(--warna1);
+}
+
+footer .bootstrap {
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+  .masterpiece div {
+    gap: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .masterpiece div {
+    gap: 20%;
+  }
+  .about {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .about img {
+    width: 100%;
+    height: fit-content;
+  }
+  .visit {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .etc {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+  .masterpiece div {
+    flex-wrap: wrap;
+  }
+  .about {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .about img {
+    width: 100%;
+    height: fit-content;
+  }
+  .visit {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .etc {
+    flex-wrap: wrap;
+  }
+}
